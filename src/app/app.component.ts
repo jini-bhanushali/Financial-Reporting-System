@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
 
   async getFinancialRecords() {
     this.isLoading = true;
-    const endpoint = 'http://localhost:4280/data-api/rest/FinancialRecords';
+    const endpoint = 'https://kind-pebble-0d3217d0f.5.azurestaticapps.net/data-api/rest/FinancialRecords';
     const response = await fetch(endpoint);
     const data = await response.json();
     setTimeout(() => {
